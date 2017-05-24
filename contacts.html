@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts - LH Archery Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<script>
+    function initMap() {
+        var uluru = {lat: 52.934667, lng: -1.1466237};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmQzxVuyj47BlurR50OxxfhjtCir6Z0MY&callback=initMap">
+</script>
+<body>
+    <header class="header">
+        <h1>Little Hampshire Archery Store</h1>
+        <ul>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </header>
+    <div class="contactForm">
+        <h2>Contact us</h2>
+        <form action="contacts.html" method="get">
+            <label for="username">Your name: </label>
+            <input name="username" id="username" type="text" placeholder="John Snow"><br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <label for="useremail">Your e-mail: </label>
+            <input name="useremail" id="useremail" type="text" placeholder="jSnow@mail.com"><br>
+
+            <label for="usertopic">Topic: </label>
+            <input name="usertopic" id="usertopic" type="text" placeholder="Wanna buy a bow"><br>
+
+            <label for="usertext">Text:</label><br>
+            <textarea name="usertext" id="usertext" rows="4" cols="50" placeholder="Let me tell you my story..."></textarea><br>
+
+            <input type="submit">
+        </form>
+    </div>
+
+
+    <div class="address">
+        <h2>Our contacts</h2>
+        <p>
+            <strong>Address:</strong> 33/4,Small rd.,Little Hampshire,England,64834
+        </p>
+        <p>
+            <strong>Phone:</strong> 1 (1234) 123-12-12
+        </p>
+        <p>
+            <strong>E-mail:</strong> lharchery@mail.com
+        </p>
+        <h3>Where to find us</h3>
+        <div id="map">
+        </div>
+    </div>
+    <footer class="footer">All rights reserved &#169; 2017</footer>
+</body>
+</html>
