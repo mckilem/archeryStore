@@ -1,25 +1,192 @@
-body    {
-    font-family:sans-serif;
+/* bold */
+@font-face {
+    font-family: robotFont;
+    src: url('../fonts/ROBOTOSLAB-BOLD.TTF');
+    font-weight: bold;
+}
+/* light */
+@font-face {
+    font-family: robotFont;
+    src: url('../fonts/ROBOTOSLAB-LIGHT.TTF');
+    font-weight: 400;
+}
+/* regular */
+@font-face {
+    font-family: robotFont;
+    src: url('../fonts/ROBOTOSLAB-REGULAR.TTF');
+    font-weight: normal;
+}
+/* thin */
+@font-face {
+    font-family: robotFont;
+    src: url('../fonts/ROBOTOSLAB-THIN.TTF');
+    font-weight: 300;
 }
 
+body {
+    font-family: robotFont,sans-serif,Verdana;
+    background-color: #f8f8f8;
+}
+
+/* common styles */
 .header {
     border-bottom: 2px solid #000000;
+    text-align: center;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header ul li {
+    display: inline;
+}
+
+.header ul a {
+    color: #15202A;
 }
 
 .footer {
     border-top: 2px solid #000000;
 }
 
+/* goods pages styles */
 .pDetailsList {
     /*list-style: none;*/
 }
 
+.sDescription {
+    font-color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.dDescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.pDetailsList {
+    color: #484343;
+    font-size: 14px;
+    font-weight: 400;
+    alignment: center;
+    line-height: 24px;
+    list-style-image: url('../images/goods/icon.png');
+}
+
+.goodsHeaders {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    font-style: normal;
+}
+
+/* catalogues page styles*/
 .goodsElement {
     padding: 10px;
     text-align: center;
+    color: #15202A;
 }
 
+.goodsElement a {
+    color: #15202A;
+}
+
+.goodsElement img {
+    border: solid 2px #15202A;
+}
+
+.productImage img {
+    border: solid 2px #15202A;
+}
+
+/* contacts page styles*/
 #map {
     width: 100%;
     height: 500px;
+}
+
+.sexTypeRadio label {
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.sexTypeRadio input {
+    display: inline-block;
+    margin: 0 auto ;
+}
+
+.sexTypeRadio {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+input[type="text"], textarea {
+    display: block;
+    margin: 0;
+    width: 50%;
+    font-family: robotFont;
+    font-size: 14px;
+    appearance: none;
+    box-shadow: none;
+}
+
+.contactForm textarea {
+    width: 50%;
+    height: 150px;
+}
+
+input[type="text"]:focus,  textarea:focus{
+    outline: none;
+}
+
+.contactForm input[type="text"], .contactForm textarea {
+    padding: 5px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.contactForm input[type="text"]:focus,
+.contactForm input[type="text"].focus,
+.contactForm textarea:focus,
+.contactForm textarea.focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+.btn-class{
+    display: inline-block;
+    border:1px solid #bfbfbf;
+    color: #8c8c8c;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    font-family: robotFont;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    padding: 5px 20px;
+    box-shadow: inset 0 1px 0 0 #fff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
+    -moz-box-shadow: inset 0 1px 0 0 #fff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
+    -webkit-box-shadow: inset 0 1px 0 0 #fff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
+    text-shadow: 0 1px 0 #fff;
+    background-image: linear-gradient(to top, #f2f2f2, #f2f2f2);
+    background-color: #f2f2f2;
+}
+.btn-class:hover, .btn-class:active{
+    border:1px solid #8c8c8c;
+    color: #8c8c8c;
+    box-shadow: inset 0 1px 0 0 #ffffff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2;
+    -moz-box-shadow: inset 0 1px 0 0 #ffffff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2;
+    -webkit-box-shadow: inset 0 1px 0 0 #ffffff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2;
+    background-color: #f2f2f2;
 }
