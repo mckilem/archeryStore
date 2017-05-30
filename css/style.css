@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: robotFont,sans-serif,Verdana;
+    font-family: robotFont,Verdana,sans-serif;
     background-color: #f8f8f8;
 }
 
@@ -34,33 +34,63 @@ body {
     text-align: center;
 }
 
-.header ul {
+.header_logo {
+    /*padding-left: 40px;*/
+}
+
+.header_storename {
+    /*padding-left: 40px;*/
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header_menu_list {
+    padding-left: 0;
     list-style: none;
 }
 
-.header ul li {
+.header_menu_list li {
     display: inline;
 }
 
-.header ul a {
-    color: #15202A;
+.header_menu_list a {
+    color: #010101;
+}
+
+.header_menu_list a:hover {
+    color: #e24027;
 }
 
 .footer {
     border-top: 2px solid #000000;
 }
 
-/* goods pages styles */
-.pDetailsList {
-    /*list-style: none;*/
+.dDescription p,.main_page_content p {
+    text-align: justify;
+    margin: 5px;
 }
 
-.sDescription {
+/*index page styles*/
+.champions_photos, .mission_photo {
+    text-align: center;
+}
+
+/* goods pages styles */
+
+.goods_right_table_part {
+    vertical-align: top;
+}
+
+.goods_upper_table {
+    width: 100%;
+}
+
+/*.sDescription {
     font-color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
-}
+}*/
 
 .dDescription {
     color: #484343;
@@ -75,8 +105,8 @@ body {
     font-size: 14px;
     font-weight: 400;
     alignment: center;
-    line-height: 24px;
-    list-style-image: url('../images/goods/icon.png');
+    /*line-height: 24px;
+    list-style-image: url('../images/goods/icon.png');*/
 }
 
 .goodsHeaders {
@@ -88,6 +118,16 @@ body {
 }
 
 /* catalogues page styles*/
+.catalogue {
+    text-align: center;
+}
+
+.catalogue table {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .goodsElement {
     padding: 10px;
     text-align: center;
@@ -100,10 +140,27 @@ body {
 
 .goodsElement img {
     border: solid 2px #15202A;
+    margin: 0;
 }
 
+.goodsElement img:hover {
+    border: none;
+    margin: 2px;
+}
+
+.theader_class {
+    line-height: 24px;
+}
+
+/* element styles */
 .productImage img {
     border: solid 2px #15202A;
+}
+
+.good_container p::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 1px;
 }
 
 /* contacts page styles*/
@@ -135,10 +192,17 @@ input[type="text"], textarea {
     display: block;
     margin: 0;
     width: 50%;
-    font-family: robotFont;
+    font-family: robotFont, serif;
     font-size: 14px;
-    appearance: none;
     box-shadow: none;
+}
+
+.username_field, .usertopic_field, .contactForm textarea {
+    text-transform: capitalize;
+}
+
+.usermail_field {
+
 }
 
 .contactForm textarea {
@@ -155,12 +219,9 @@ input[type="text"]:focus,  textarea:focus{
     border: solid 1px #dcdcdc;
     transition: box-shadow 0.3s, border 0.3s;
 }
-.contactForm input[type="text"]:focus,
-.contactForm input[type="text"].focus,
-.contactForm textarea:focus,
-.contactForm textarea.focus {
-    border: solid 1px #707070;
-    box-shadow: 0 0 5px 1px #969696;
+
+.usermail_field input[type="text"]:focus {
+    color: #e24027;
 }
 
 .btn-class{
@@ -170,7 +231,7 @@ input[type="text"]:focus,  textarea:focus{
     border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
-    font-family: robotFont;
+    font-family: robotFont, serif;
     width: auto;
     height: auto;
     font-size: 14px;
@@ -179,8 +240,7 @@ input[type="text"]:focus,  textarea:focus{
     -moz-box-shadow: inset 0 1px 0 0 #fff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
     -webkit-box-shadow: inset 0 1px 0 0 #fff,inset 0 -1px 0 0 #d9d9d9,inset 0 0 0 1px #f2f2f2,0 2px 4px 0 #f2f2f2;
     text-shadow: 0 1px 0 #fff;
-    background-image: linear-gradient(to top, #f2f2f2, #f2f2f2);
-    background-color: #f2f2f2;
+    background: #f2f2f2 linear-gradient(to top, #f2f2f2, #f2f2f2);
 }
 .btn-class:hover, .btn-class:active{
     border:1px solid #8c8c8c;

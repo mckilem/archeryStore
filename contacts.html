@@ -7,18 +7,25 @@
 </head>
 <body>
     <header class="header">
-        <h1>Little Hampshire Archery Store</h1>
-        <ul>
-            <li><a href="index.html">Main</a></li>
-            <li><a href="catalogue.html">Catalogue</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
+        <div class="header_logo">
+            <img src="images/logo_main.png" alt="deer" title="LH Archery Store" width="200">
+        </div>
+        <div class="header_storename">
+            Little Hampshire Archery Store
+        </div>
+        <div class="header_menu">
+            <ul class="header_menu_list">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
     </header>
     <div class="contactForm">
         <h2>Contact us</h2>
         <form action="contacts.html" method="get">
             <label for="username">Your name: </label>
-            <input name="username" id="username" type="text" placeholder="John Snow">
+            <input class="username_field" name="username" id="username" type="text" placeholder="John Snow">
 
             <div class="sexTypeRadio">
                 <input type="radio" id="male" name="gender" value="0">
@@ -27,11 +34,13 @@
                 <label for="female">Female</label>
             </div>
 
-            <label for="useremail">Your e-mail: </label>
-            <input name="useremail" id="useremail" type="text" placeholder="jSnow@mail.com"><br>
+            <div class="usermail_field">
+                <label for="useremail">Your e-mail: </label>
+                <input  name="useremail" id="useremail" type="text" placeholder="jSnow@mail.com"><br>
+            </div>
 
             <label for="usertopic">Topic: </label>
-            <input name="usertopic" id="usertopic" type="text" placeholder="Wanna buy a bow"><br>
+            <input class="usertopic_field" name="usertopic" id="usertopic" type="text" placeholder="Wanna buy a bow"><br>
 
             <label for="usertext">Text:</label><br>
             <textarea name="usertext" id="usertext" rows="4" cols="50" placeholder="Let me tell you my story..."></textarea><br>
